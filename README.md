@@ -2,10 +2,10 @@
 
 ### Problem Statement
 
-Rodent has always been a big health issue in NYC especially for restaurant industry. Restaurant consulting services are provised to restaurants owners for helping them solve issues in various aspects of their business. Location chosing is one of most import factors for new restaunts. 
+Rodents have always been a big health issue in NYC especially for the restaurant industry. Restaurant consulting services are provided to restaurants owners for helping them solve issues in various aspects of their business. Location is one of most important factors for new restaurants. 
 
-In this project, we are going to focus on Manhattan area in two datasets [Rodent Inspection in NYC](https://data.cityofnewyork.us/Health/Rodent-Inspection/p937-wjvj) and [Restaurant-Inspection](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j ) from New York City Department of Health and Mental Hygiene (DOHMH). We are going to see if neighborhoods with higher rates of active have a higher restaurants inspection violation. With predicting the future rodent map, we are going to evaluate if this location is good for opening a new reataurant.(e.g. absence of rats in the past 1 year, 2 years or 3 years)   
-(_Use time series focusing on one area_)
+In this project, we are going to focus on Manhattan area with two datasets [Rodent Inspection in NYC](https://data.cityofnewyork.us/Health/Rodent-Inspection/p937-wjvj) and [Restaurant-Inspection](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j ) from New York City Department of Health and Mental Hygiene (DOHMH). We are going to look at the restaurants in neighborhoods with high rates of rat activity, which do not have rat related inspection violations.  
+
 
 **Datasets:**  
 
