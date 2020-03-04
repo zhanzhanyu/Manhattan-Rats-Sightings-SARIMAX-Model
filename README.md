@@ -6,11 +6,11 @@ Rodents have always been a big health issue in NYC especially for the restaurant
 
 In this project, we are going to focus on Manhattan area with two datasets [Rodent Inspection in NYC](https://data.cityofnewyork.us/Health/Rodent-Inspection/p937-wjvj) and [Restaurant Inspection](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j ) from New York City Department of Health and Mental Hygiene (DOHMH). We are going to predict rats inspection results for certain areas where restaurants are concentrated. 
 The models we are going to us in this project: 
-1. Linear regression model with "Rodent Inspection in NYC" dataset.
-2. Time series in centain area:  
+Part 1: Linear regression model with "Rodent Inspection in NYC" dataset.
+Part 2: Time series in centain area:  
     - ARIMAX: We are going to consider features in "Restaurant Inspection" as eXogenous "X".   
     - Random Forest  
-3. CNN  
+    - RNN  
 
 
 
