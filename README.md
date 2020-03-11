@@ -29,7 +29,7 @@ The datasets Rodent Inspection in NYC and Rat Sightings are public datasets from
 **Data Preprocessing**  
 We preprocess and clean our four datasets. Then we aggregate them to one dataset `exogenous.csv` which has all zip codes in Manhattan with time from 2010-01 to 2018-12 and the columns restaurant and population are our exogenous features for time series model SARIMAX.  
 **Modeling**  
-We look at ARIMA model first and then manual GridSearch $p$, $d$, $q$, $S$, $P$, $D$ and $Q$ for our SARIMAX model.  
+We look at ARIMA model first and then manual GridSearch (p, d, q) and (S, P, D, Q) for our SARIMAX model.  
 
 ## Modeling  
 Since our model does not perform very good with ARIMA, we will introduce Seasonality "S"and two eXogenous features"X". First we are going to manually GridSearch (p, d, q) and (S, P, D, Q). 
