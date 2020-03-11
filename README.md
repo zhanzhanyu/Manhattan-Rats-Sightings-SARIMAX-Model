@@ -32,7 +32,7 @@ We preprocess and clean our four datasets. Then we aggregate them to one dataset
 We look at ARIMA model first and then manual GridSearch $p$, $d$, $q$, $S$, $P$, $D$ and $Q$ for our SARIMAX model.  
 
 ## Modeling  
-Since our model does not perform very good with ARIMA, we will introduce Seasonality "S"and two eXogenous features"X". First we are going to manually GridSearch $p$, $d$, $q$, $S$, $P$, $D$ and $Q$. 
+Since our model does not perform very good with ARIMA, we will introduce Seasonality "S"and two eXogenous features"X". First we are going to manually GridSearch (p, d, q) and (S, P, D, Q). 
 ![](./images/sarimax.png)
 Our prediction has less than 5 sightings error from root mean squared error(RMSE).
 
