@@ -41,7 +41,7 @@ Our prediction has less than 5 sightings error from root mean squared error(RMSE
 ## Conclusion
 From the root mean squared error(RMSE), overall we can say that our model performs well. This time series model to predict rats sightings for one zip code area NY 10002 can also be applied to all zip codes in NYC.
 
-### Limitation   
+### Limitations   
 - Neighborhoods with higher rates of active rat signs may not actually have higher rat populations but simply have more sightings and inspections.  
 - Since the census data are annually, we assume that from Janurary to December each year, the numbers of restaurants and population are the same(e.g. from 2010-01 to 2010-12, numbers of restaurants in zip code 10002 keep the same as 600).   
 - Our 2018 year restaurant data are estimated since they have not been out yet.   
