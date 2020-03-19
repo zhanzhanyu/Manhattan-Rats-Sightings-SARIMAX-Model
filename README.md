@@ -26,13 +26,15 @@ We are focus on Manhattan area using several datasets include [Rodent Inspection
 ## Executive Summary  
 **Data Gathering**  
 The datasets Rodent Inspection in NYC and Rat Sightings are public datasets from data.cityofnewyork.us with we loaded by using Socrata. The census data are from United States Census Bureau which we use API key.   
+
 **Data Preprocessing**  
-We preprocess and clean our four datasets. Then we aggregate them to one dataset `exogenous.csv` which has all zip codes in Manhattan with time from 2010-01 to 2018-12 and the columns restaurant and population are our exogenous features for time series model SARIMAX.  
+We preprocess and clean our four datasets. Then we aggregate them to one dataset `exogenous.csv` which has all zip codes in Manhattan with time from 2010-01 to 2018-12 and the columns restaurant and population are our exogenous features for time series model SARIMAX.   
+
 **Modeling**  
-We look at ARIMA model first and then manual GridSearch (p, d, q) and (S, P, D, Q) for our SARIMAX model.  
+We look at ARIMA model first and then manual GridSearch (p, d, q) and (P, D, Q, S) for our SARIMAX model.  
 
 ## Modeling  
-Since our model does not perform very good with ARIMA, we will introduce Seasonality "S"and two eXogenous features"X". First we are going to manually GridSearch (p, d, q) and (S, P, D, Q). 
+Since our model does not perform very good with ARIMA, we will introduce Seasonality "S"and two eXogenous features"X". First we are going to manually GridSearch (p, d, q) and (P, D, Q, S). 
 ![](./images/sarimax.png)
 Our prediction has less than 5 sightings error from root mean squared error(RMSE).
 
@@ -40,9 +42,9 @@ Our prediction has less than 5 sightings error from root mean squared error(RMSE
 From the root mean squared error(RMSE), overall we can say that our model performs well. This time series model to predict rats sightings for one zip code area NY 10002 can also be applied to all zip codes in NYC.
 
 ### Limitation   
-- Note that if a property/taxlot does not appear in the file, that does not indicate an absence of rats - rather just that it has not been inspected.   
-- Neighborhoods with higher rates of active rat signs may not actually have higher rat populations but simply have more inspections.  
-- Our 2018 year restaurant data are estimated.  
+- Neighborhoods with higher rates of active rat signs may not actually have higher rat populations but simply have more sightings and inspections.  
+- Since the census data are annually, we assume that from Janurary to December each year, the numbers of restaurants and population are the same(e.g. from 2010-01 to 2010-12, numbers of restaurants in zip code 10002 keep the same as 600).   
+- Our 2018 year restaurant data are estimated since they have not been out yet.   
 
 ## Source  
 - [Business Patterns](https://www.census.gov/data/developers/data-sets/cbp-nonemp-zbp/zbp-api.2010.html)   
